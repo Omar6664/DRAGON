@@ -27,7 +27,8 @@ file:close()
 end  
 if not database:get(id_server..":token") then
 io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27')
-local token = io.read()
+local token = io.read(2139218906:AAECyRrikOvn25JCWARUdtmpgIgExX2K16A
+)
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
@@ -43,7 +44,9 @@ os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
 io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27[0;33;49m')
-local SUDOID = io.read():gsub(' ','') 
+local SUDOID = io.read(@oa666
+):gsub(@oa666
+) 
 if tostring(SUDOID):match('%d+') then
 data,res = https.request("https://api-dragon.tk/api-s00f4/Dragon.php?bn=DRAGON&id="..SUDOID)
 if res == 200 then
@@ -65,7 +68,8 @@ end
 end
 if not database:get(id_server..":SUDO:USERNAME") then
 io.write('\27[1;31m ↓ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
-local SUDOUSERNAME = io.read():gsub('@','')
+local SUDOUSERNAME = io.read(@oa666
+):gsub('@','')
 if SUDOUSERNAME ~= '' then
 io.write('\n\27[1;34m تم حفظ معرف المطور :\n\27[0;39;49m')
 database:set(id_server..":SUDO:USERNAME",'@'..SUDOUSERNAME)
